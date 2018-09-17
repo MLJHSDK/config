@@ -16,6 +16,11 @@ spring:
    profiles: dev
    application:
     name: sdkserver-server-log
+    cloud:
+     bus:
+       enabled: true
+       trace:
+         enabled: true
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
