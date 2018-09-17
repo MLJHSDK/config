@@ -3,7 +3,6 @@ spring:
     active:
       -dev
 ---
-tests:zwjjjjj
 server:
   port: 8004
 
