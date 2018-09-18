@@ -5,7 +5,7 @@ spring:
 ---
 server:
   port: 8004
-zwj: sss
+zwj: ssssssssss
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
   type-aliases-package: com.sdkserver.log.model      # 所有Entity别名类所在包
