@@ -23,6 +23,11 @@ spring:
   profiles: dev
   cloud:
     stream:
+      rabbit: # 进行rabbit的相关绑定配置
+        bindings:
+          mljhsdk_output:
+            producer: # 进行消费端配置
+              routing-key-expression: '''mljhsdk-key''' #定义 RoutingKey 的表达式配置
       binders: # 在此处配置要绑定的rabbitmq的服务信息；
         defaultRabbit: # 表示定义的名称，用于于binding整合
           type: rabbit # 消息组件类型
