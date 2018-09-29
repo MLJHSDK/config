@@ -129,7 +129,8 @@ sdkserver-server-game-id: http://172.16.20.140:8001
     
 define:
   id:
-    game: CHANNEL_ID  #用于Redis生成ID
+    name: CHANNEL_ID  #用于Redis生成ID
+    number: 1 #id间隔
 
 info:
   app.name: sdkserver-server-channel
@@ -204,8 +205,8 @@ sdkserver-server-game-id: http://172.16.20.140:8001
     
 define:
   id:
-    game: CHANNEL_ID  #用于Redis生成ID
-
+    name: CHANNEL_ID  #用于Redis生成ID
+    number: 1 #id间隔
 info:
   app.name: sdkserver-server-channel
   company.name: www.miaoleyouxi.com
