@@ -9,7 +9,7 @@ server:
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml      # mybatis配置文件所在路径
-  type-aliases-package: com.sdkserver.channel.model    # 所有Entity别名类所在包
+  type-aliases-package: com.sdkserver.pojo    # 所有Entity别名类所在包
   mapper-locations:
   - classpath:mybatis/mapper/*.xml                       # mapper映射文件
 
@@ -50,6 +50,7 @@ spring:
      pool:
        max-active: 8
        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+
        max-wait: -1
        # 连接池中的最大空闲连接
        max-idle: 8
@@ -86,7 +87,7 @@ server:
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml      # mybatis配置文件所在路径
-  type-aliases-package: com.sdkserver.channel.model    # 所有Entity别名类所在包
+  type-aliases-package: com.sdkserver.pojo    # 所有Entity别名类所在包
   mapper-locations:
   - classpath:mybatis/mapper/*.xml                       # mapper映射文件
 
@@ -163,7 +164,7 @@ server:
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml      # mybatis配置文件所在路径
-  type-aliases-package: com.sdkserver.channel.model    # 所有Entity别名类所在包
+  type-aliases-package: com.sdkserver.pojo    # 所有Entity别名类所在包
   mapper-locations:
   - classpath:mybatis/mapper/*.xml                       # mapper映射文件
 
